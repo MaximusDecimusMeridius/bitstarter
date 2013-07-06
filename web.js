@@ -2,8 +2,8 @@ var express = require('express');
 
 var app = express.createServer(express.logger());
 
-var test = "yoooo"
-var html = fs.readFileSync(index.html)
+var test = "yoooo";
+//var html = fs.readFileSync(index.html)
 
 // var text = html.toString(String)
 
