@@ -9,7 +9,7 @@ var content = text.toString("utf-8",0,12);
 
 
 app.get('/', function(request, response) {
-  response.send(text);
+  response.send(content);
 });
 
 var port = process.env.PORT || 5000;
