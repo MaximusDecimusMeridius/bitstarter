@@ -2,7 +2,11 @@ var express = require('express');
 
 var app = express.createServer(express.logger());
 
-var text = "yoooo"
+
+var text = fs.readFileSync("index.html");
+
+var content = text.toString("utf-8",0,text.length-1);
+
 
 app.get('/', function(request, response) {
   response.send(text);
